@@ -19,6 +19,9 @@ h1, h2, h3, h4, h5, h6, p {
 a {
     text-decoration: none;
 }
+img {
+    display: block;
+}
 
 
 /* common загальні стилі */
@@ -115,7 +118,7 @@ a {
 
 .hero-section {
     background-color: #2e2f42;
-    padding: 188px;          
+    padding: 188px 0 188px;          
 }
 
 
@@ -134,7 +137,11 @@ a {
 
 .hero-button {
     margin: 0 auto;
-    display: block;    
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -149,13 +156,22 @@ a {
     background-color: #404bbf;
 }
 /* solutions */
-.container-solutions {
+.solutions-section {
     padding: 120px 0;
 }
-
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
 .solutions-title {    
-    margin: 0 auto;
-    display: none;
+    margin-bottom: 8px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -167,9 +183,8 @@ a {
 .solutions-list {
     display: flex;
     align-items: center; 
-    max-width: 1128px;   
-    gap: 24px;
-    /* flex-basis: calc((100% - 72) / 4); */
+    max-width: 1128px; 
+    flex-basis: calc((100% - 72) / 4);
 }
 
 .solutions-titles { 
@@ -193,15 +208,12 @@ a {
 
 /* team */
 .team-section {
-    background-color: #f4f4fd;    
-}
-
-.container-team {
+    background-color: #f4f4fd; 
     padding: 120px 0;
 }
 
 .team-title {
-    
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -211,17 +223,21 @@ a {
     color: #2e2f42;
 }
 
+.team-div {
+    padding: 32px 0;
+}
+
 .team-list {
     display: flex;
     align-items: center;
     padding: 72px 0;
-    gap: 24px;
-    /* flex-basis: calc((100% - 72) / 4); */
+    flex-basis: calc((100% - 72) / 4);
 }
 
 .team-list-item {
     letter-spacing: 0.02em;
     background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-titles {       
@@ -243,12 +259,12 @@ a {
 }
 /* portfolio */
 
-.container-portfolio {
-padding: 120px 0;
+.portfolio-section {
+padding: 120px 0 120px 0;
 }
 
 .portfolio-title {
-   
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -258,17 +274,25 @@ padding: 120px 0;
     color: #2e2f42;
 }
 
+.div-portfolio {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
+
+
 .portfolio-list {
-    display: inline-flex;
+    display: flex;
     align-items: center;  
     flex-wrap: wrap;
-    padding: 72px 0 48px 0;
-    flex-basis: calc((100% - 72) / 4);
+    column-gap: 24px;
+    row-gap: 48px;
+    width: calc((100% - 48px) / 3);
 }
 
 .portfolio-list-item {
-    border: 1px solid #e7e9fc;
-    margin: 24px 12px;
+      margin: 24px 12px;
 }
 
 .portfolio-titles {
@@ -286,12 +310,14 @@ padding: 120px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    /* padding: 0 0 48px 0; */
+
 }
 /* footer */
 .container-footer {
     max-width: 1158px;
-    padding: 100px;
+    padding: 100px 0;
+    display: inline-block;
+    margin-bottom: 16px;
 
 }
 
@@ -301,7 +327,6 @@ padding: 120px 0;
 
 .footer-text {
     max-width: 264px;
-    padding: 16px 0 100 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
