@@ -34,6 +34,7 @@ h1, h2, h3, h4, h5, h6, p {
 a {
     text-decoration: none;
 }
+
 img {
     display: block;
 }
@@ -41,7 +42,6 @@ img {
 
 /* common загальні стилі */
 .container {
-    /* max-width: 1128px +15px +15px; */
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
@@ -174,10 +174,7 @@ img {
 .solutions-section {
     padding: 120px 0;
 }
-.solutions-title {
-   
-    margin-bottom: 8px;
-}
+
 .solutions-title {    
     margin-bottom: 8px;
     font-weight: 700;
@@ -191,10 +188,9 @@ img {
 .solutions-list {
     display: flex;
     align-items: center; 
-    max-width: 1128px; 
-    /* gap: 24px;   */
-    
+    max-width: 1128px;     
 }
+
 
 .solutions-list-item {
     margin-right: 0;
@@ -212,7 +208,7 @@ img {
 }
 
 .solutions-text {  
-    /* max-width: 264px; */
+   
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
