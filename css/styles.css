@@ -114,7 +114,7 @@ img {
 .address-link:focus {
     color: #404bbf;
 }
-/* hero image */
+/* 1  hero image */
 
 .hero-section {
     background-color: #2e2f42;
@@ -155,7 +155,7 @@ img {
 .hero-button:focus {
     background-color: #404bbf;
 }
-/* solutions */
+/* 2  solutions */
 .solutions-section {
     padding: 120px 0;
 }
@@ -169,6 +169,7 @@ img {
     position: absolute;
     width: 1px;
     white-space: nowrap;
+    /* margin-bottom: 8px; */
 }
 .solutions-title {    
     margin-bottom: 8px;
@@ -184,7 +185,13 @@ img {
     display: flex;
     align-items: center; 
     max-width: 1128px; 
-    flex-basis: calc((100% - 72) / 4);
+    gap: 24px;  
+    flex-basis: calc((100% - 72px) / 4);
+}
+
+.solutions-list-item {
+    margin-right: 0;
+    gap: 24px;
 }
 
 .solutions-titles { 
@@ -206,10 +213,14 @@ img {
 }
 
 
-/* team */
+/* 3  team */
 .team-section {
     background-color: #f4f4fd; 
     padding: 120px 0;
+}
+
+.container-team {
+    padding: 32px 0;
 }
 
 .team-title {
@@ -223,16 +234,13 @@ img {
     color: #2e2f42;
 }
 
-.team-div {
-    padding: 32px 0;
-}
 
 .team-list {
     display: flex;
     align-items: center;
     padding: 72px 0;
-    flex-basis: calc((100% - 72) / 4);
-}
+    flex-basis: calc((100% - 72px) / 4);
+    }
 
 .team-list-item {
     letter-spacing: 0.02em;
@@ -257,11 +265,19 @@ img {
     color: #434455;
     text-align: center;
 }
-/* portfolio */
+/* 4  portfolio */
 
 .portfolio-section {
 padding: 120px 0 120px 0;
 }
+
+.container-portfolio{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
+
 
 .portfolio-title {
     margin-bottom: 72px;
@@ -274,13 +290,6 @@ padding: 120px 0 120px 0;
     color: #2e2f42;
 }
 
-.div-portfolio {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-    margin-bottom: 8px;
-}
-
 
 .portfolio-list {
     display: flex;
@@ -288,7 +297,7 @@ padding: 120px 0 120px 0;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    width: calc((100% - 48px) / 3);
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 .portfolio-list-item {
