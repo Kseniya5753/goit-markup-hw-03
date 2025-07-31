@@ -125,10 +125,9 @@ img {
 
 
 .hero-title {
-    margin: 0 auto;
     text-align: center;   
     max-width: 496px;
-    padding: 48px 0;
+    margin: 48px auto;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -198,8 +197,7 @@ img {
    flex-basis: calc((100% - 72px) / 4);
 }
 
-.solutions-titles { 
-    padding: 8px 0;
+.solutions-titles {
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
@@ -240,7 +238,6 @@ img {
 .team-list {
     display: flex;
     align-items: center;
-    padding: 72px 0;
     gap: 24px;
     }
 
@@ -316,8 +313,6 @@ padding: 120px 0;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     padding: 32px 16px;
-    height: 120px;     
-    margin-bottom: 8px;
     }
 
 .portfolio-titles {
